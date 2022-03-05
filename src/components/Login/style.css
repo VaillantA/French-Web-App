@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+.container{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.container-login{
+    background-color: #FFFFFF;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 26pt;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-top: 23pt;
+}
+
+h2{
+    color: #143057;
+    opacity: 0.40;
+    font-size: 14pt;
+    margin-bottom:10pt;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    margin-top: 60pt;
+    
+}
+
+form div {
+    margin: 0 auto;
+}
+
+form input {
+
+    /* width: 100%; */
+    padding: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border: none;
+    border-radius: 10pt;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16pt;
+    font-weight: lighter;
+}
+form input:focus{
+   outline: none;
+}
+
+form div:first-child{
+    margin-bottom: 20pt;
+}
+
+.connectButton {
+    background-color: #2479C2;
+    padding: 10pt;
+    border-radius: 10pt;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-weight: bold;
+    width: 100%;
+    border:none;
+    margin-top: 60pt;
+    cursor: pointer;
+    
+}
