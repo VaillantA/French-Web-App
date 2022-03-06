@@ -13,8 +13,8 @@ const ajax = (store) => (next) => (action) => {
            password: state.password, 
         })
         .then((response) => {
-            // api.defaults.headers.common.Authorization = `bearer ${response.data.token}`;
-            // sessionStorage.setItem('key', JSON.stringify(response.data));
+            api.defaults.headers.common.Authorization = `bearer ${response.data.token}`;
+            sessionStorage.setItem('key', JSON.stringify(response.data));
             store.dispatch({
               type: 'SAVE_USER_LOGIN',
               token: response.token,

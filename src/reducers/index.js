@@ -1,10 +1,12 @@
+import data from "../data/data";
+
 //* Initial State
 const initialState = {
   email: '',
   password: '',
   token:'',
   logged: false,
-
+  list: data,
 };
   
   //* Actions received

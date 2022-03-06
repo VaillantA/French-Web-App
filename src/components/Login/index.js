@@ -9,7 +9,7 @@ import './style.css';
 const Login = () => {
 
     const dispatch = useDispatch();
-    const handleClick = (event) => {
+    const handleSubmit = (event) => {
     event.preventDefault();
     dispatch({
       type: 'LOGIN',
@@ -21,7 +21,7 @@ const Login = () => {
             <div className="container-login">
                 <h1>Connexion</h1>
                     <div className="form">
-                        <form action="" className="login-form">
+                        <form onSubmit={handleSubmit} className="login-form">
                             <div className="mail">
                                 <h2>Adresse mail</h2>
                                 <Input 
@@ -40,7 +40,7 @@ const Login = () => {
                                 />
                             </div>
                             <div className="button">
-                                <button type="submit" className="connectButton" onClick={handleClick}> <Link to="/list-articles">Se connecter</Link></button>
+                                <button type="submit" className="connectButton" > <Link to="/list-articles">Se connecter</Link></button>
                             </div>
                         </form>
                     </div>
