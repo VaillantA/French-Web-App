@@ -1,6 +1,5 @@
 import axios from 'axios';
 
-
 const api = axios.create({
     baseURL: 'https://test.frenchappweb.com/api/v1/auth',
 });
@@ -20,10 +19,10 @@ const ajax = (store) => (next) => (action) => {
               token: response.token,
             });
         })
-        // .catch((error) => {
-        //     console.error(error);
-        //     alert('Authentification échouée');
-        //   });
+        .catch((error) => {
+            console.error(error);
+            alert('Authentification échouée');
+          });
     }
     next(action);
 };
