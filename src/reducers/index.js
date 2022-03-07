@@ -1,3 +1,4 @@
+//*Data 
 import data from "../data/data";
 
 //* Initial State
@@ -8,7 +9,7 @@ const initialState = {
   logged: false,
   list: data,
 };
-  
+
   //* Actions received
   
   const reducer = (state = initialState, action = {}) => {

@@ -6,7 +6,7 @@ export default [
     "title": "Un éléphant tombe du 3eme étage",
     "body": "Wala c'est vrai ! De ouf le truc.",
     "date": 1617977100000,
-    "image": "https://cdn-s-www.ledauphine.com/images/811E8163-5CE8-4069-8424-EEB37FD1CD60/NW_detail/title-1597167436.jpg"
+    "image": "https://cdn-s-www.ledauphine.com/images/811E8163-5CE8-4069-8424-EEB37FD1CD60/NW_detail/title-1597167436.jpg",
   },
   {
     "createdAt": 1628518183290,

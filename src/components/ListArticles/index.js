@@ -1,13 +1,19 @@
+//* react-Redux library import 
 import { useSelector } from 'react-redux'
-import SimpleDateTime  from 'react-simple-timestamp-to-date';
+
+//*React-router-dom import
 import { NavLink } from 'react-router-dom';
 
+//*Import of the component allowing to convert the timestamp in readable element
+import SimpleDateTime  from 'react-simple-timestamp-to-date';
+
+//*Style
 import './style.css';
+
 
 const ListArticles = () => {
 
     const articles = useSelector((state) => state.list);
-    console.log(articles)
         return (
         <div className="wrapper">
             <div className="wrapper-list">
